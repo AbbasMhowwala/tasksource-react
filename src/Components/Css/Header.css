@@ -1,0 +1,55 @@
+.ts-topnav {
+    background-color: #191919;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fafafa;
+    padding: 15px 0;
+}
+dl, ol, ul
+{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+div#ts-header {
+    background: #000;
+}
+.ts-header-branding img.img-fluid {
+    max-height: 80px;
+    margin: 15px;
+}
+.ts-menu-link {
+    color: #fff !important;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 0px 17px;
+    font-size: 18px;
+    text-decoration: none !important;
+    position: relative;
+}
+.ts-menu > li > a::before {
+    background-color: #0799df;
+    background-image: linear-gradient(left,#0799df,#0576b3);
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: -43px;
+    margin: auto;
+    height: 5px;
+    width: 0;
+    -webkit-transition: all .25s cubic-bezier(.37,.31,.2,.85);
+    -khtml-transition: all .25s cubic-bezier(.37,.31,.2,.85);
+    -moz-transition: all .25s cubic-bezier(.37,.31,.2,.85);
+    -ms-transition: all .25s cubic-bezier(.37,.31,.2,.85);
+    -o-transition: all .25s cubic-bezier(.37,.31,.2,.85);
+    transition: all .25s cubic-bezier(.37,.31,.2,.85);
+}
+.ts-menu > li:hover a:before
+{
+    width: 100%;
+}
