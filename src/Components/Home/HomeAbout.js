@@ -1,7 +1,9 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
-import StarIcon from '@mui/icons-material/Star';
+import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
+import StarIcon from "@mui/icons-material/Star";
+import { Animated } from "react-animated-css";
+
 const HomeAbout = () => {
   return (
     <div className="ts-home-about">
@@ -22,7 +24,7 @@ const HomeAbout = () => {
               </p>
               <div class="ts-fancy-box">
                 <div class="item-icon">
-                <HistoryEduIcon fontSize="small" />
+                  <HistoryEduIcon fontSize="small" />
                 </div>
                 <div class="item-holder">
                   <h3 class="item-title">Innovative strategies </h3>
@@ -37,22 +39,34 @@ const HomeAbout = () => {
               <br />
               <div class="ts-fancy-box">
                 <div class="item-icon">
-                <StarIcon fontSize="small" />
+                  <StarIcon fontSize="small" />
                 </div>
                 <div class="item-holder">
                   <h3 class="item-title">Confidentiality</h3>
-                  <p class="item-description">We maintain complete security and confidentiality of your business information. Our dedicated outsourcing services are completely error free and innovative.                  </p>
+                  <p class="item-description">
+                    We maintain complete security and confidentiality of your
+                    business information. Our dedicated outsourcing services are
+                    completely error free and innovative.{" "}
+                  </p>
                 </div>
               </div>
             </div>
           </Col>
           <Col xl={6} lg={6} md={6} sm={12}>
-            <div className="about-content">
-              <Image
-                src="https://tasksource.net/wp-content/uploads/2020/07/home-about1.png"
-                className="about-image img-fluid"
-              />
-            </div>
+            <Animated
+              animationIn="fadeInRight"
+              animationOut="pulse"
+              animationInDuration={1000}
+              animationOutDuration={1000}
+              isVisible={false}
+            >
+              <div className="about-content">
+                <Image
+                  src="https://tasksource.net/wp-content/uploads/2020/07/home-about1.png"
+                  className="about-image img-fluid"
+                />
+              </div>
+            </Animated>
           </Col>
         </Row>
       </Container>

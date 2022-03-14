@@ -71,7 +71,7 @@ h1.item-title {
 }
 span.count {
   color: #079ae0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   line-height: 1;
   font-weight: 700;
@@ -87,4 +87,11 @@ span.count-des {
   margin-top: 6px;
   font-size: 17px;
   line-height: 24px;
+}
+.ts-rev-slider img,
+.ts-rev-slider {
+  height: 750px;
+}
+nav.awssld__bullets {
+  display: none;
 }
